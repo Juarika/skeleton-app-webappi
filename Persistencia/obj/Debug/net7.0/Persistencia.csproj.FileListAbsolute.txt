@@ -1,0 +1,15 @@
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/bin/Debug/net7.0/Persistencia.deps.json
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/bin/Debug/net7.0/Persistencia.dll
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/bin/Debug/net7.0/Persistencia.pdb
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/bin/Debug/net7.0/Dominio.dll
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/bin/Debug/net7.0/Dominio.pdb
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/obj/Debug/net7.0/Persistencia.csproj.AssemblyReference.cache
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/obj/Debug/net7.0/Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/obj/Debug/net7.0/Persistencia.AssemblyInfoInputs.cache
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/obj/Debug/net7.0/Persistencia.AssemblyInfo.cs
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/obj/Debug/net7.0/Persistencia.csproj.CoreCompileInputs.cache
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/obj/Debug/net7.0/Persistencia.csproj.CopyComplete
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/obj/Debug/net7.0/Persistencia.dll
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/obj/Debug/net7.0/refint/Persistencia.dll
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/obj/Debug/net7.0/Persistencia.pdb
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Persistencia/obj/Debug/net7.0/ref/Persistencia.dll

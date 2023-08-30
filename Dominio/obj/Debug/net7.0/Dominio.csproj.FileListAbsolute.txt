@@ -1,0 +1,12 @@
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/bin/Debug/net7.0/Dominio.deps.json
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/bin/Debug/net7.0/Dominio.dll
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/bin/Debug/net7.0/Dominio.pdb
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/obj/Debug/net7.0/Dominio.csproj.AssemblyReference.cache
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/obj/Debug/net7.0/Dominio.GeneratedMSBuildEditorConfig.editorconfig
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/obj/Debug/net7.0/Dominio.AssemblyInfoInputs.cache
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/obj/Debug/net7.0/Dominio.AssemblyInfo.cs
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/obj/Debug/net7.0/Dominio.csproj.CoreCompileInputs.cache
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/obj/Debug/net7.0/Dominio.dll
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/obj/Debug/net7.0/refint/Dominio.dll
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/obj/Debug/net7.0/Dominio.pdb
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/obj/Debug/net7.0/ref/Dominio.dll
