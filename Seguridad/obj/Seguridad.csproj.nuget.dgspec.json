@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/Dominio.csproj": {}
+    "/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Seguridad/Seguridad.csproj": {}
   },
   "projects": {
-    "/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/Dominio.csproj": {
+    "/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Seguridad/Seguridad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/Dominio.csproj",
-        "projectName": "Dominio",
-        "projectPath": "/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/Dominio.csproj",
+        "projectUniqueName": "/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Seguridad/Seguridad.csproj",
+        "projectName": "Seguridad",
+        "projectPath": "/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Seguridad/Seguridad.csproj",
         "packagesPath": "/home/juarika/.nuget/packages/",
-        "outputPath": "/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Dominio/obj/",
+        "outputPath": "/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/Seguridad/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/juarika/.nuget/NuGet/NuGet.Config"
@@ -38,17 +38,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "FluentValidation.AspNetCore": {
+            "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[11.3.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.10, )"
-            },
-            "itext7.pdfhtml": {
-              "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[6.32.2, )"
             }
           },
           "imports": [
