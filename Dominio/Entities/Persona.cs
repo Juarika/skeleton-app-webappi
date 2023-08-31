@@ -11,4 +11,5 @@ public class Persona : BaseEntity
     public TipoPersona TipoPersona { get; set; }
     public ICollection<Matricula> Matriculas { get; set; }
     public ICollection<TrainerSalon> TrainerSalones { get; set; }
+    public ICollection<Salon> Salones { get; set; } = new HashSet<Salon>();
 }

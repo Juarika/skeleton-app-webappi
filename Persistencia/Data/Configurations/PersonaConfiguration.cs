@@ -27,5 +27,23 @@ public class PersonaConfiguration : IEntityTypeConfiguration<Persona>
         builder.HasOne(p => p.TipoPersona)
         .WithMany(c => c.Personas)
         .HasForeignKey(p => p.IdTipoPerFk);
+
+        builder
+        .HasMany(p => p.Salones)
+        .WithMany(p => p.Personas)
+        .UsingEntity<TrainerSalon>(
+            j => j
+                .HasOne(pt => pt.Salon)
+                .WithMany(t => t.TrainerSalones)
+                .HasForeignKey(pt => pt.IdSalonFk),
+            j => j
+                .HasOne(pt => pt.Persona)
+                .WithMany(p => p.TrainerSalones)
+                .HasForeignKey(pt => pt.IdTrainerFk),
+            j => 
+            {
+                j.HasKey(pt => new { pt.IdTrainerFk, pt.IdSalonFk });
+            }
+        );
     }
 }
