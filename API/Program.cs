@@ -11,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.ConfigureCors();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAplicacionServices();
 
 builder.Services.AddDbContext<SkeletonContext>(options => 
 {

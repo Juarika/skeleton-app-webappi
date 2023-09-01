@@ -1,3 +1,6 @@
+using Aplicacion.UnitOfWork;
+using Dominio.Interfaces;
+
 namespace API.Extensions;
 
 public static class ApplicationServiceExtension
@@ -10,4 +13,11 @@ public static class ApplicationServiceExtension
             .AllowAnyMethod().
             AllowAnyHeader());
     });
+
+    public static void AddAplicacionServices(this IServiceCollection services)
+    {
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
+    }
+
+    // public static void ConfigureRateLimiting()
 }
