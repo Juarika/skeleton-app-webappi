@@ -1,3 +1,5 @@
 {
-    "dotnet.defaultSolution": "skeleton-app-webappi.sln"
+    "dotnet.defaultSolution": "skeleton-app-webappi.sln",
+    "editor.fontFamily": "Victor Mono",
+    "editor.fontLigatures": true
 }
