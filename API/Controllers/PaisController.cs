@@ -1,4 +1,5 @@
 using API.Dtos;
+using API.Helpers;
 using AutoMapper;
 using Dominio.Entities;
 using Dominio.Interfaces;
@@ -39,10 +40,11 @@ public class PaisController : BaseApiController
     [MapToApiVersion("1.1")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<IEnumerable<PaisDto>>> Get11()
+    public async Task<ActionResult<Pager<PaisxDepDto>>> Get11([FromQuery] Params paisParams)
     {
-        var paises = await unitOfWork.Paises.GetAllAsync();
-        return mapper.Map<List<PaisDto>>(paises);
+        var pais = await unitOfWork.Paises.GetAllAsync(paisParams.PageIndex, paisParams.PageSize, paisParams.Search);
+        var lstPaisesDto = mapper.Map<List<PaisxDepDto>>(pais.registros);
+        return new Pager<PaisxDepDto>(lstPaisesDto, pais.totalRegistros, paisParams.PageIndex, paisParams.PageSize, paisParams.Search);
     }
 
     [HttpGet("{id}")]
