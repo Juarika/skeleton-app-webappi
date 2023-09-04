@@ -75,3 +75,4 @@
 /home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/API/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll
 /home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/API/bin/Debug/net7.0/System.CodeDom.dll
 /home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/API/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/home/juarika/Documentos/projectsNetCore/skeleton-app-webappi/API/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll

@@ -19,7 +19,8 @@ public class SkeletonContext : DbContext
     public DbSet<Matricula> Matriculas { get; set; }
     public DbSet<TrainerSalon> TrainerSalones { get; set; }
     public DbSet<Genero> Generos { get; set; }
-
+    public DbSet<Rol> Roles { get; set; }
+    public DbSet<PersonaRol> PersonaRoles { get; set;}
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // modelBuilder.Entity<TrainerSalon>().HasKey(r => new {r.IdSalonFk, r.IdTrainerFk});
