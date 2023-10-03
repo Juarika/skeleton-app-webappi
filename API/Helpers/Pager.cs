@@ -2,11 +2,13 @@ namespace API.Helpers;
 
 public class Pager<T> where T : class
 {
-    public string Search { get; private set; }
-    public int PageIndex { get; private set;}
-    public int PageSize { get; private set;}
-    public int Total { get; private set;}
+    public string Search { get; set; }
+    public int PageIndex { get; set;}
+    public int PageSize { get; set;}
+    public int Total { get; set;}
     public IEnumerable<T> Registers { get; private set; }
+
+    public Pager(){}
 
     public Pager(IEnumerable<T> registers, int total, int pageSize, int pageIndex, string search)
     {

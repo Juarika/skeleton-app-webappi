@@ -18,15 +18,6 @@ public class PaisController : BaseApiController
         mapper = _mapper;
     }
 
-    // [HttpGet]
-    // [ProducesResponseType(StatusCodes.Status200OK)]
-    // [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    // public async Task<ActionResult<IEnumerable<Pais>>> Get()
-    // {
-    //     var paises = await unitOfWork.Paises.GetAllAsync();
-    //     return Ok(paises);
-    // }
-
     [HttpGet]
     [MapToApiVersion("1.0")]
     [ProducesResponseType(StatusCodes.Status200OK)]
@@ -36,6 +27,7 @@ public class PaisController : BaseApiController
         var paises = await unitOfWork.Paises.GetAllAsync();
         return mapper.Map<List<PaisDto>>(paises);
     }
+    
     [HttpGet]
     [MapToApiVersion("1.1")]
     [ProducesResponseType(StatusCodes.Status200OK)]

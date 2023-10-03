@@ -3,6 +3,8 @@ using API.Extensions;
 using AspNetCoreRateLimit;
 using Microsoft.EntityFrameworkCore;
 using Persistencia;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,10 +18,14 @@ builder.Services.AddControllers(options =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.ConfigureCors();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c => 
+{
+    c.ResolveConflictingActions( apiDescriptions => apiDescriptions.First()); 
+});
 builder.Services.AddAplicacionServices();
 builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 builder.Services.ConfigureRateLimiting();
+builder.Services.AddJwt(builder.Configuration);
 builder.Services.ConfigureApiVersioning();
 
 builder.Services.AddDbContext<SkeletonContext>(options => 

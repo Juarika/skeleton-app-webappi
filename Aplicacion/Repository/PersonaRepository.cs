@@ -39,4 +39,11 @@ public class PersonaRepository : GenericRepository<Persona>, IPersonaRepository
                                 .ToListAsync();
         return (totalRegistros, registros);
     }
+
+    public async Task<Persona> GetByUsernameAsync(string username)
+    {
+        return await _context.Personas
+                            .Include(u=>u.Roles)
+                            .FirstOrDefaultAsync(u => u.Username.ToLower() == username.ToLower());
+    }
 }

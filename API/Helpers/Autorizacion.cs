@@ -2,11 +2,11 @@ namespace API.Helpers;
 
 public class Autorizacion
 {
-    public Enum Roles 
+    public enum Roles 
     {
+        Empleado,
         Administrador,
-        Gerente,
-        Empleado
+        Gerente
     }
 
     public const Roles rol_predeterminado = Roles.Empleado;

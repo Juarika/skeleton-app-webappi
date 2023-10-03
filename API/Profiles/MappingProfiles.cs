@@ -17,5 +17,6 @@ public class MappingProfiles : Profile
             .ForMember(m => m.Departamentos, d => d.Ignore());
         CreateMap<Departamento, DepartamentoDto>().ReverseMap();
         CreateMap<Pais, PaisxDepDto>().ReverseMap();
+        CreateMap<Persona, PersonaDto>().ReverseMap();
     }
 }

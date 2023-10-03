@@ -49,7 +49,7 @@ public class UserService : IUserService
         {
             var rolPredeterminado = _unitOfWork.Roles
                                         .Find(u => u.Nombre == Autorizacion.rol_predeterminado.ToString())
-                                        .First();
+                                        .FirstOrDefault();
             try 
             {
                 persona.Roles.Add(rolPredeterminado);
@@ -90,7 +90,7 @@ public class UserService : IUserService
             JwtSecurityToken jwtSecurityToken = CreateJwtToken(persona);
             datosUsuarioDto.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
             datosUsuarioDto.Email = persona.Email;
-            datosUsuarioDto.UserName = persona.UserName;
+            datosUsuarioDto.UserName = persona.Username;
             datosUsuarioDto.Roles = persona.Roles
                                             .Select(u => u.Nombre)
                                             .ToList();
@@ -98,7 +98,7 @@ public class UserService : IUserService
         }
 
         datosUsuarioDto.EstaAutenticado = false;
-        datosUsuarioDto.Mensaje = $"Credenciales incorrectas para el usuario {persona.UserName}";
+        datosUsuarioDto.Mensaje = $"Credenciales incorrectas para el usuario {persona.Username}";
         return datosUsuarioDto;
     }
 
@@ -136,7 +136,7 @@ public class UserService : IUserService
             return $"Rol {model.Role} no encontrado.";
         }
 
-        return $"Credenciales incorrectas para el usuario {persona.UserName}";
+        return $"Credenciales incorrectas para el usuario {persona.Username}";
     }
 
     private JwtSecurityToken CreateJwtToken(Persona persona)
@@ -155,7 +155,7 @@ public class UserService : IUserService
             new Claim("uid", persona.Id.ToString())
         }.Union(roleClaims);
 
-        var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwt.Key));
+        var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwt.HasKey));
         var signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
         var jwtSecurityToken = new JwtSecurityToken(
             issuer: _jwt.Issuer,

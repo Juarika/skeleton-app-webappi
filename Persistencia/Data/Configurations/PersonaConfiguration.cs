@@ -49,7 +49,7 @@ public class PersonaConfiguration : IEntityTypeConfiguration<Persona>
         builder
         .HasMany(p => p.Roles)
         .WithMany(p => p.Personas)
-        .UsingEntity<PersonaRol>(
+        .UsingEntity<PersonaRoles>(
             j => j
                 .HasOne(pt => pt.Rol)
                 .WithMany(t => t.PersonaRoles)

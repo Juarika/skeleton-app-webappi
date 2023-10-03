@@ -19,7 +19,7 @@ public class RolConfiguration : IEntityTypeConfiguration<Rol>
         builder
         .HasMany(p => p.Personas)
         .WithMany(p => p.Roles)
-        .UsingEntity<PersonaRol>(
+        .UsingEntity<PersonaRoles>(
             j => j
                 .HasOne(pt => pt.Persona)
                 .WithMany(p => p.PersonaRoles)
